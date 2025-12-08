@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --purple: #ac6cff;
+    --silver: #f8f9ff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #2d2d2d;
+}
+
+header {
+    display: flex;
+    padding: 30px 75px;
+    justify-content: space-between;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header .anchortag {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+header .anchortag a {
+    color: var(--silver);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.4s ease-in-out;
+}
+
+header .anchortag a:hover {
+    color: var(--purple);
+}
+
+header .sign {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header .sign a {
+    color: var(--purple);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+header .sign .btn {
+    color: var(--purple);
+    background-color: #2d2d2d;
+    border: 1px solid var(--purple);
+    transition: all 0.5s ease-in-out;
+    padding: 8px 17px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+header .sign .btn:hover {
+    color: var(--silver);
+    background-color: var(--purple);
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 60px 45px 75px;
+    position: relative;
+}
+
+.section1 .sec1left h1 #span {
+    color: var(--purple);
+}
+
+.section1 .sec1left h1 {
+    color: var(--silver);
+    font-size: 67px;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.section1 .sec1left p {
+    color: var(--silver);
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 40px;
+}
+
+.section1 .sec1left .button {
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.section1 .sec1left .button .btn {
+    color: var(--silver);
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    border-radius: 25px;
+}
+
+.section1 .sec1left .button #btn1 {
+    padding: 25px 50px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+.section1 .sec1left .button #btn1:hover {
+    color: var(--purple);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #2d2d2d;
+    border: 1px solid #EADAFF;
+
+}
+
+.section1 .sec1left .button #btn2 {
+    padding: 25px 50px;
+    color: var(--purple);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #EADAFF;
+    border: 1px solid #EADAFF;
+    transition: all 0.5s ease-in-out;
+}
+.section1 .sec1left .button #btn2:hover {
+    color: #EADAFF;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #2d2d2d;
+    border: 1px solid var(--purple);
+
+
+}
+#star1{
+    z-index: 2;
+    position: absolute;
+    top: 190px;
+    left: 1700px;
+}
