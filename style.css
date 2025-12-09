@@ -3,6 +3,7 @@
 :root {
     --purple: #ac6cff;
     --silver: #f8f9ff;
+    --dark-purple: #2F1C48;
 }
 
 body {
@@ -133,6 +134,7 @@ header .sign .btn:hover {
     border: 1px solid #EADAFF;
     transition: all 0.5s ease-in-out;
 }
+
 .section1 .sec1left .button #btn2:hover {
     color: #EADAFF;
     font-size: 20px;
@@ -142,9 +144,137 @@ header .sign .btn:hover {
 
 
 }
-#star1{
+
+#star1 {
     z-index: 2;
     position: absolute;
     top: 190px;
     left: 1700px;
+}
+
+.section2 {
+    background-color: var(--purple);
+    padding: 75px 75px;
+}
+
+.section2 .sec2detail {
+    text-align: center;
+    color: var(--silver);
+}
+
+.section2 .sec2detail h5 {
+    font-size: 25px;
+    font-weight: 600;
+    /* padding-top: 12px; */
+}
+
+.section2 .logos {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 66px;
+}
+
+.sectiopn3 {
+    padding: 100px 40px 70px 40px;
+    text-align: center;
+    background-color: var(--dark-purple);
+}
+
+.sectiopn3 .sec3top h3 {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--silver);
+}
+
+.sectiopn3 .sec3top p {
+    color: var(--silver);
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 25px;
+}
+
+.sectiopn3 .sectiopn3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectiopn3 .sectiopn3 .card {
+    width: 390px;
+    height: 320px;
+    background-color: var(--purple);
+    border-radius: 25px;
+}
+
+.sectiopn3 .sectiopn3 .card .pics {
+    padding: 50px 55px;
+}
+
+.sectiopn3 .sectiopn3 .card .pics p {
+    color: var(--silver);
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 65px;
+}
+
+.sectiopn3 .sectiopn3 .card .pics #p1 {
+    padding-top: 87px;
+}
+
+.sectiopn3 .sectiopn3 .card .pics #p2 {
+    padding-top: 79px;
+}
+
+.section4 {
+    padding: 80px 75px 20px 75px;
+}
+
+.section4 .sec4top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.section4 .sec4top h1 {
+    color: var(--silver);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.section4 .sec4bottom {
+    display: flex;
+    gap: 150px;
+    padding-top: 90px;
+}
+
+.section4 .sec4bottom .sec4bottomright h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-style: bold;
+    color: var(--silver);
+}
+
+.section4 .sec4bottom .sec4bottomright p {
+    font-size: 27px;
+    font-weight: 400;
+    color: var(--silver);
+    padding-top: 20px;
+}
+.section4 .sec4bottom .sec4bottomright .bttn{
+    padding-top: 20px;
+}
+
+.section4 .sec4bottom .sec4bottomright #btn3 {
+    color: var(--silver);
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 25px 50px;
+    border-radius: 22px;
+    transition: all 0.8s ease-in-out;
+}
+.section4 .sec4bottom .sec4bottomright #btn3:hover{
+        color: var(--purple);
+        background-color: #2d2d2d;
+        border: 1px solid var(--silver);
 }
