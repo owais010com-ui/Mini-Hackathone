@@ -242,7 +242,7 @@ header .sign .btn:hover {
 
 .section4 .sec4bottom {
     display: flex;
-    gap: 150px;
+    gap: 180px;
     padding-top: 90px;
 }
 
@@ -259,7 +259,8 @@ header .sign .btn:hover {
     color: var(--silver);
     padding-top: 20px;
 }
-.section4 .sec4bottom .sec4bottomright .bttn{
+
+.section4 .sec4bottom .sec4bottomright .bttn {
     padding-top: 20px;
 }
 
@@ -271,10 +272,165 @@ header .sign .btn:hover {
     font-weight: 600;
     padding: 25px 50px;
     border-radius: 22px;
-    transition: all 0.8s ease-in-out;
+    transition: all 0.6s ease-in-out;
 }
-.section4 .sec4bottom .sec4bottomright #btn3:hover{
-        color: var(--purple);
-        background-color: #2d2d2d;
-        border: 1px solid var(--silver);
+
+.section4 .sec4bottom .sec4bottomright #btn3:hover {
+    color: var(--purple);
+    background-color: #2d2d2d;
+    border: 1px solid var(--silver);
+}
+
+.section5 {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 75px 40px 75px;
+}
+
+.section5 .sec5left h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-style: bold;
+    color: var(--silver);
+}
+
+.section5 .sec5left p {
+    font-size: 27px;
+    font-weight: 400;
+    color: var(--silver);
+    padding-top: 35px;
+}
+
+.section5 .sec5left .bttn {
+    padding-top: 50px;
+}
+
+.section5 .sec5left #btn3 {
+    color: var(--silver);
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 25px 50px;
+    border-radius: 22px;
+    transition: all 0.6s ease-in-out;
+}
+
+.section5 .sec5left #btn3:hover {
+    color: var(--purple);
+    background-color: #2d2d2d;
+    border: 1px solid var(--silver);
+}
+
+.section6 {
+    display: flex;
+    gap: 180px;
+    padding: 100px 75px 40px 75px;
+}
+
+.section6 .sec6right h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-style: bold;
+    color: var(--silver);
+}
+
+.section6 .sec6right p {
+    font-size: 27px;
+    font-weight: 400;
+    color: var(--silver);
+    padding-top: 35px;
+}
+
+.section6 .sec6right .bttn {
+    padding-top: 50px;
+}
+
+.section6 .sec6right #btn3 {
+    color: var(--silver);
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 25px 50px;
+    border-radius: 22px;
+    transition: all 0.6s ease-in-out;
+}
+
+.section6 .sec6right #btn3:hover {
+    color: var(--purple);
+    background-color: #2d2d2d;
+    border: 1px solid var(--silver);
+}
+
+.section7 {
+    padding: 75px 265px;
+    background-color: var(--dark-purple);
+}
+
+.section7 .container h2 {
+    color: var(--silver);
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.section7 .container .contpics {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.section7 .container .contpics h3 {
+    color: var(--silver);
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.section7 .container .contpics p {
+    color: var(--silver);
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.section8{
+    padding: 100px 0px 70px 0px;
+}
+.section8 h3{
+    color: var(--silver);
+    font-size: 31px;
+    font-weight: 600;
+    text-align: center;
+}
+.section8 .container{
+    width: 850px;
+    height: 400px;
+    background-color: var(--purple);
+    border-radius: 33px;
+}
+.section8 .container .contdetail{
+    text-align: center;
+    color: var(--silver);
+    padding: 55px 85px;
+}
+.section8 .container .contdetail p{
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 15px;
+    font-style: bold;
+}
+.section8 .container .contdetail h6{
+    font-size: 16px;
+    font-weight: 700;
+    font-style: bold;
+}
+.section8 .container .contdetail h5{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: bold;
+    padding-top: 35px;
 }
