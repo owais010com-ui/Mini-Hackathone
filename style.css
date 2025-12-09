@@ -33,13 +33,27 @@ header .anchortag {
 header .anchortag a {
     color: var(--silver);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
-    transition: all 0.4s ease-in-out;
+    position: relative;
+    padding-bottom: 4px;
 }
 
-header .anchortag a:hover {
-    color: var(--purple);
+header .anchortag a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--purple);
+    transition: all 0.5s ease-in-out;
+}
+
+header .anchortag a:hover::after {
+    width: 100%;
+
 }
 
 header .sign {
@@ -51,24 +65,26 @@ header .sign {
 header .sign a {
     color: var(--purple);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
 }
 
 header .sign .btn {
-    color: var(--purple);
-    background-color: #2d2d2d;
+    color: var(--silver);
+    background-color: var(--purple);
     border: 1px solid var(--purple);
     transition: all 0.5s ease-in-out;
-    padding: 8px 17px;
-    font-size: 16px;
-    font-weight: 600;
+    padding: 8px 20px;
+    font-size: 18px;
+    font-weight: 500;
     border-radius: 15px;
 }
 
 header .sign .btn:hover {
-    color: var(--silver);
-    background-color: var(--purple);
+    color: var(--purple);
+    background-color: #2d2d2d;
+    border: 1px solid var(--silver);
+
 }
 
 .section1 {
@@ -142,14 +158,56 @@ header .sign .btn:hover {
     background-color: #2d2d2d;
     border: 1px solid var(--purple);
 
-
 }
 
 #star1 {
     z-index: 2;
     position: absolute;
-    top: 190px;
+    top: 340px;
+    left: 450px;
+}
+
+#star2 {
+    z-index: 2;
+    position: absolute;
+    top: 600px;
+    left: 1270px;
+}
+
+#dot1 {
+    position: absolute;
+    top: 170px;
+    left: 40px;
+}
+
+#dot2 {
+    position: absolute;
+    top: 680px;
+    left: 40px;
+}
+
+#dot3 {
+    position: absolute;
+    top: 120px;
+    left: 990px;
+}
+
+#dot4 {
+    position: absolute;
+    top: 750px;
+    left: 1550px;
+}
+
+#dot5 {
+    position: absolute;
+    top: 140px;
     left: 1700px;
+}
+
+#dot6 {
+    position: absolute;
+    top: 700px;
+    left: 900px;
 }
 
 .section2 {
@@ -203,6 +261,12 @@ header .sign .btn:hover {
     height: 320px;
     background-color: var(--purple);
     border-radius: 25px;
+    transition: all 0.6s ease-in-out;
+}
+
+.sectiopn3 .sectiopn3 .card:hover {
+    background-color: var(--dark-purple);
+    border: 1px solid var(--silver);
 }
 
 .sectiopn3 .sectiopn3 .card .pics {
@@ -325,7 +389,7 @@ header .sign .btn:hover {
 .section6 {
     display: flex;
     gap: 180px;
-    padding: 100px 75px 40px 75px;
+    padding: 100px 75px 140px 75px;
 }
 
 .section6 .sec6right h1 {
@@ -397,40 +461,290 @@ header .sign .btn:hover {
 
 }
 
-.section8{
+.section8 {
     padding: 100px 0px 70px 0px;
 }
-.section8 h3{
+
+.section8 h3 {
     color: var(--silver);
     font-size: 31px;
     font-weight: 600;
     text-align: center;
 }
-.section8 .container{
+
+.section8 .container {
     width: 850px;
     height: 400px;
     background-color: var(--purple);
     border-radius: 33px;
 }
-.section8 .container .contdetail{
+
+.section8 .container .contdetail {
     text-align: center;
     color: var(--silver);
     padding: 55px 85px;
 }
-.section8 .container .contdetail p{
+
+.section8 .container .contdetail p {
     font-size: 16px;
     font-weight: 500;
     padding-top: 15px;
     font-style: bold;
 }
-.section8 .container .contdetail h6{
+
+.section8 .container .contdetail h6 {
     font-size: 16px;
     font-weight: 700;
     font-style: bold;
 }
-.section8 .container .contdetail h5{
+
+.section8 .container .contdetail h5 {
     font-size: 20px;
     font-weight: 700;
     font-style: bold;
     padding-top: 35px;
+}
+
+.section9 {
+    background-color: var(--purple);
+    padding-bottom: 120px;
+}
+
+.section9 h3 {
+    color: var(--silver);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    padding-top: 50px;
+}
+
+.section9 p {
+    color: var(--silver);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.section9 .contianer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.section9 .contianer .box {
+    width: 350px;
+    height: 380px;
+    border-radius: 25px;
+    background-color: var(--dark-purple);
+    padding: 40px 20px;
+}
+
+.section9 .contianer .box h4 {
+    color: var(--silver);
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.section9 .contianer .box h2 {
+    color: var(--purple);
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.section9 .contianer .box ul li {
+    color: var(--silver);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.section9 .contianer .box .butt {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.section9 .contianer .box .butt2 {
+    text-align: center;
+    padding-top: 45px;
+}
+
+.section9 .contianer .box .butt .btn {
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.6s ease-in-out;
+
+}
+
+.section9 .contianer .box .butt2 .btn {
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.6s ease-in-out;
+
+}
+
+.section9 .contianer .box .butt .btn:hover {
+    color: var(--silver);
+    background-color: var(--dark-purple);
+    border: 1px solid var(--silver);
+}
+
+.section9 .contianer .box .butt2 .btn:hover {
+    color: var(--silver);
+    background-color: var(--dark-purple);
+    border: 1px solid var(--silver);
+}
+
+.section10 {
+    background-color: var(--dark-purple);
+    padding: 100px 75px 50px 75px;
+}
+
+.section10 .sec10top {
+    display: flex;
+    align-items: center;
+    gap: 400px;
+}
+
+.section10 .sec10top h1 {
+    color: var(--silver);
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.section10 .sec10top .btn {
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    padding: 25px 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.6s ease-in-out;
+
+}
+
+.section10 .sec10top .btn:hover {
+    color: var(--silver);
+    background-color: var(--dark-purple);
+    border: 1px solid var(--silver);
+
+}
+
+.section10 h5 {
+    color: var(--silver);
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+footer {
+    padding: 60px 75px;
+
+}
+
+.footermain {
+    display: flex;
+    gap: 200px;
+
+}
+
+footer .left .image {
+    width: 250px;
+}
+
+footer .left .image img {
+    width: 100%;
+}
+
+footer .left p {
+    color: var(--silver);
+    padding-top: 29px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+footer .right {
+    display: flex;
+    padding-top: 48px;
+    gap: 100px;
+
+}
+
+footer .right .side1 h2 {
+    color: var(--purple);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+footer .right .side1 a {
+    color: var(--silver);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 50px;
+    transition: all 0.4s ease-in-out;
+
+}
+
+footer .right .side1 a:hover {
+    color: var(--purple);
+}
+
+footer .right .side2 h2 {
+    color: var(--purple);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+footer .right .side2 .minilogo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    line-height: 25px;
+
+}
+
+footer .right .side2 .minilogo a {
+    color: var(--silver);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.4s ease-in-out;
+}
+
+footer .right .side2 .minilogo a:hover {
+    color: var(--purple);
+}
+
+.line2 {
+    padding-top: 50px;
+    width: 1680px;
+}
+
+.line2 img {
+    width: 100%;
+}
+
+footer .bottom .left {
+    display: flex;
+    gap: 500px;
+    justify-content: center;
+    padding-top: 40px;
+    align-items: center;
+}
+
+footer .bottom h2 {
+    color: var(--silver);
+    font-size: 20px;
+    font-weight: 600;
 }
